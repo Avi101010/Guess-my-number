@@ -7,7 +7,7 @@ document.querySelector('.number').textContent = 13;
 document.querySelector('.score').textContent = 10;
 // for input type
 document.querySelector('.guess').value = 23; 
-console.log(document.querySelector('.guess').value);
+
 
 */
 
@@ -21,7 +21,6 @@ const displayMessage = function (message) {
 
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
-  console.log(guess, typeof guess);
 
   //when no input
   if (!guess) {
@@ -50,7 +49,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
-console.log('Avi');
+
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
